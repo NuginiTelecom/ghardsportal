@@ -1,0 +1,130 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+ul.menubar {
+    margin-top: 30px;
+    margin-bottom: 2px;
+    list-style: none;
+    justify-content: center;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 10px;
+    font-size: 1.0em;
+    transition: font-size 0.2s ease;
+}
+.menu {
+    display: none; /* 初期状態で非表示 */
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.right{
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+.controls {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.controls button {
+    margin: 0 5px;
+    padding: 5px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+.controls button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+.resizable-img {
+    width: 150px;
+    height: auto;
+    transition: width 0.2s ease, height 0.2s ease;
+}
+header{
+    height: 350px;
+    background: url('img/header.png') center / cover no-repeat;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+header span, li, p{
+    background-color: white;
+    padding: 0.5em 1em;
+    color: black;
+    display: inline-block;
+}
+/* ボタン画像のスタイル */
+.image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.image-button img {
+    display: block;
+    width: 100px; /* 画像サイズを調整 */
+    height: auto;
+}
+.voice{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.voice button{
+    margin: 0 5px;
+    padding: 5px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+.news{
+    text-align: center;
+}
+.topic{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    top: 50px;
+    right: 0;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn{
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #ccc;
+    border: 0 2px solid #f0f0f0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 16px;
+    cursor: pointer
+}
+.gobtn{
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #007bff;
+    border-color: #0056b3;
+    border: 0 2px solid #0056b3;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 16px;
+    cursor: pointer
+}
